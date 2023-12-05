@@ -31,7 +31,7 @@ function drawAndProcessNumber() {
     } while (drawnNumbers.has(number));
     drawnNumbers.add(number);
 
-    document.getElementById('last-number').innerText = 'Ultimo Numero: ' + number;
+    document.getElementById('last-number').innerText = 'Ultimo Numero foi ' + number;
     markNumber(player1Card, number, 'player1');
     markNumber(player2Card, number, 'player2');
 
