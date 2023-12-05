@@ -13,7 +13,7 @@ function initializeGame() {
 
     displayCard(player1Card, 'player1');
     displayCard(player2Card, 'player2');
-    document.getElementById('last-number').innerText = 'Last Number: None';
+    document.getElementById('last-number').innerText = 'Ultimo Numero: Nenhum';
     document.getElementById('winner-announcement').innerText = '';
     document.getElementById('draw-number').disabled = false;
     document.getElementById('start-game').innerText = 'Jogar Novamente';
@@ -21,7 +21,7 @@ function initializeGame() {
 
 function drawAndProcessNumber() {
     if (drawnNumbers.size >= 75) {
-        displayWinner('All numbers have been drawn!');
+        displayWinner('Todos os numero foram sorteados!');
         return;
     }
 
@@ -31,7 +31,7 @@ function drawAndProcessNumber() {
     } while (drawnNumbers.has(number));
     drawnNumbers.add(number);
 
-    document.getElementById('last-number').innerText = 'Last Number: ' + number;
+    document.getElementById('last-number').innerText = 'Ultimo Numero: ' + number;
     markNumber(player1Card, number, 'player1');
     markNumber(player2Card, number, 'player2');
 
