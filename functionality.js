@@ -109,7 +109,7 @@ function checkForBingo(playerId) {
 
     [...rows, ...columns, mainDiagonal, antiDiagonal].forEach(line => {
         if (line.every(div => div.classList.contains('marked') || div.classList.contains('free'))) {
-            displayWinner(playerId.toUpperCase() + ' Consegui o Bingo! Clique em jogar novamente!');
+            displayWinner(playerId.toUpperCase() + ' Conseguiu o Bingo! Clique em jogar novamente!');
         }
     });
 }
