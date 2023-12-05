@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.bingo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bingo-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    max-width: 330px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #f9f9f9;
+}
+
+.bingo-card .number {
+    padding: 15px;
+    border: 1px solid #333;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bingo-card .number.free {
+    background-color: #aaa;
+    color: white;
+}
+
+.marked {
+    background-color: rgb(158, 229, 253);
+}
+
+#draw-number {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#start-game {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
